@@ -9,12 +9,17 @@
     <div>
         <h1>Hello World</h1>
     </div>
-    <div id="js">      
-    </div>
+    <!-- <div id="js">      
+    </div> -->
 </body>
 <script>
-    document.getElementById("js").innerHTML="<h1>Hello World</h1>"
+    // document.getElementById("js").innerHTML="<h1>Hello World</h1>"
     document.body.style.backgroundColor ="#98c2a7" ;
-    
+    const root=document.createElement("div").root.id="root";
+    const heading=document.createElement("h1").heading.className="heading";
+    heading.innerHTML="Hello World";
+    root=appendChild(heading);
+    document.body.appendChild(root);
+
 </script>
 </html>
