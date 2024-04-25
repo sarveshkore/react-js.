@@ -9,21 +9,30 @@
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 </head>
 <body>
-    <div>
-        <h1>Hello World</h1>
+    <div id="root">
     </div>
 </body>
 <script>
     document.body.style.backgroundColor ="#98c2a7";
-    const root=document.createElement("div");
-    root.id="root";
-    const heading=document.createElement("h1");
-    heading.className="heading";
-    heading.innerHTML="Hello World";
-    root.appendChild(heading);
-    document.body.appendChild(root);
-    console.log("React",React);
-    console.log("React",ReactDOM);
-    
+    // const root=document.createElement("div");
+    // root.id="root";
+    // const heading=document.createElement("h1");
+    // heading.className="heading";
+    // heading.innerHTML="Hello World";
+    // root.appendChild(heading);
+    // document.body.appendChild(root);
+    // console.log("React",React);      //have code for this library from cdn links
+    // console.log("React",ReactDOM);   //have code for this library from cdn links
+
+
+    const root=document.getElementById('root');  //get the div with the id "root
+    const heading1= React.createElement("h1",{class:"heading1"},"heading1");
+    const container1= React.createElement("div",{class:"container1",style: { backgroundColor: "yellow" }},heading1);
+    console.log(container1);            //object
+    const heading2= React.createElement("h3",{class:"heading3"},"heading2");
+    const container2= React.createElement("div",{class:"container2",style: { backgroundColor: "red" }},heading2);
+    const rootElement=ReactDOM.createRoot(root);     //creating a root element using
+    rootElement.render([container1,container2]);       //render method of createRoot function 
+    //render converts code into html.
 </script>
 </html>
