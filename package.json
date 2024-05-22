@@ -4,6 +4,7 @@
   "description": "\"This is the basic React project\"",
   "scripts": {
     "start" : "npx parcel index.html",
+    "build" : "npx parcel build index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Sarvesh Kore",
@@ -15,5 +16,12 @@
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
-  }
+  },
+  "browserlist":[
+    "last 10 version",
+    "> 1%",
+    "not dead"
+  ]
+  
+
 }
