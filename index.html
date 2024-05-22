@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <!--no need of cdn links since we have installed react and react-dom packages-->
+    <!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> -->     <!--no need of cdn links since we have installed react and react-dom packages-->
 </head>
 <body>
     <div id="root">
     </div>
+    <script type="module" src="App.js"></script>
+
 </body>
-<script>
+<!-- <script>
     document.body.style.backgroundColor ="#98c2a7";
     // const root=document.createElement("div");
     // root.id="root";
@@ -23,8 +27,6 @@
     // document.body.appendChild(root);
     // console.log("React",React);      //have code for this library from cdn links
     // console.log("React",ReactDOM);   //have code for this library from cdn links
-
-
     const root=document.getElementById('root');  //get the div with the id "root
     const heading1= React.createElement("h1",{class:"heading1"},"heading1");
     const container1= React.createElement("div",{class:"container1",style: { backgroundColor: "yellow" }},heading1);
@@ -34,5 +36,5 @@
     const rootElement=ReactDOM.createRoot(root);     //creating a root element using
     rootElement.render([container1,container2]);       //render method of createRoot function 
     //render converts code into html.
-</script>
+</script> -->
 </html>
